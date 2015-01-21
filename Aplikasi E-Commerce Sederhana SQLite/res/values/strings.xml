@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, MainActivity!</string>
+    <string name="app_name">E-ComSLite</string>
+    <string name="HomeActivityTitle">Beranda</string>
+    <string name="kategori">Kategori Barang:</string>
+    <string name="kisaran">Kisaran Harga:</string>
+    <string name="spinner_kategori_prompt">Pilih Kategori...</string>
+    <string name="spinner_kisaran_prompt">Pilih Harga...</string>
+</resources>

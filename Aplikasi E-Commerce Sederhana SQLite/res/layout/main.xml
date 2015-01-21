@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >  
+
+    <!-- Included header.xml here -->
+	<ViewStub android:id="@+id/vsHeader" 
+	    android:inflatedId="@+id/header" 
+		android:layout_width="fill_parent" 
+		android:layout_height="50dip" 
+		android:layout="@layout/header" />
+	
+	<LinearLayout android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="1"
+    	android:background="@drawable/background" >
+	    <TableLayout android:layout_width="fill_parent" 
+      		android:layout_height="75dip" 
+      		android:stretchColumns="1"
+      		android:layout_marginLeft="5dip"
+   	  		android:layout_marginRight="5dip"> 
+      		<TableRow android:layout_marginTop="10dip">    
+   		 		<TextView android:layout_width="fill_parent" 
+		      		android:layout_height="wrap_content" 
+		      		android:text="@string/kategori"
+		      		android:textSize="12sp"
+		      		android:textColor="#FFF"
+		      		android:layout_marginLeft="15dip"/>
+         		<TextView android:layout_width="fill_parent" 
+		      		android:layout_height="wrap_content" 
+		      		android:text="@string/kisaran"
+		      		android:textSize="12sp"
+		      		android:textColor="#FFF"
+		      		android:layout_marginLeft="10dip"/>
+      		</TableRow>
+      		<TableRow>
+      	 		<Spinner android:id="@+id/kategori"
+		      		android:layout_width="125dip" 
+		      		android:layout_height="40dip"
+		      		android:drawSelectorOnTop="true"
+		      		android:layout_marginLeft="12dip" 
+		      		android:prompt="@string/spinner_kategori_prompt" /> 
+      	 		<Spinner android:id="@+id/kisaran"
+		      		android:layout_width="125dip" 
+		      		android:layout_height="40dip"
+		      		android:drawSelectorOnTop="true" 
+		      		android:layout_marginLeft="7dip"
+		      		android:layout_marginRight="15dip"
+		      		android:prompt="@string/spinner_kisaran_prompt" />
+      		</TableRow>
+   		</TableLayout>
+   
+   		<ListView android:layout_width="fill_parent" 
+   	  		android:layout_height="wrap_content"
+	  		android:id="@android:id/list"
+	  		android:layout_marginTop="10dip" 
+	  		android:layout_marginRight="15dip"
+	  		android:layout_marginLeft="15dip" >
+   		</ListView>
+	</LinearLayout>
+</LinearLayout>
